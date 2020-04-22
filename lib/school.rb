@@ -4,5 +4,11 @@ class School
     @name = name 
   end
   
-  ROSTER = hash.new
+  ROSTER = {}
+  
+  def add_student(name, grade)
+    if ROSTER[grade].include?(grade)
+      ROSTER[grade] = []
+      ROSTER[grade] << name
+  end
 end
