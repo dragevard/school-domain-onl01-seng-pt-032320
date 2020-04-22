@@ -13,4 +13,16 @@ class School
       ROSTER[grade] = []
       ROSTER[grade] << name
   end
+  
+  def grade(grade)
+    ROSTER[grade]
+  end
+  
+  def sort
+    ROSTER.each do |key, value|
+      value.sort!
+    end
+    ROSTER
+  end
+      
 end
