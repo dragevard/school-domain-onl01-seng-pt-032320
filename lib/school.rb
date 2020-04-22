@@ -1,10 +1,11 @@
 # code here!
 class School
+  
+  ROSTER = {}
   def initialize(name)
     @name = name 
   end
   
-  ROSTER = {}
   
   def add_student(name, grade)
     if ROSTER[grade].include?(grade)
